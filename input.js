@@ -14,6 +14,7 @@ const setupInput = function (conn) {
   return stdin;
 };
 
+// these if statements could be refactored into an object and called
 const handleUserInput = function (key) {
   // if ctrl c is pressed, exit the game
     if (key === '\u0003') {
@@ -38,7 +39,7 @@ const handleUserInput = function (key) {
     else if (key === 'q') {
       connection.write("Say: EAT");
     }
-    
+
 };
 
 module.exports = {setupInput};
